@@ -2,6 +2,11 @@ class Admin::RoomsController < ApplicationController
   before_action :set_room, only: [:show, :edit, :update, :destroy]
   before_action :set_hotel, only: [:index, :create, :new, :show]
 
+  def book
+
+  end
+
+
   def index
     @rooms = @hotel.rooms.all
   end

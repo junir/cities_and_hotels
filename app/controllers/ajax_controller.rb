@@ -5,7 +5,8 @@ class AjaxController < ApplicationController
   end
 
   def get_rooms
-    hotel = Hotel.find(params[:id])
+    # TODO
+    hotel = Hotel.find(params[:hotel_id])
     @rooms = hotel.rooms
   end
 end

@@ -17,7 +17,10 @@
 
 $(document).on('change','#city', function(event){
   var selected_city_id = $("#city").val();
-
   $.get("/ajax/get_hotels", {city_id: selected_city_id} );
+});
 
+$(document).on('change','#hotel', function(event){
+  var selected_hotel_id = $("#hotel").val();
+  $.get("/ajax/get_rooms", {hotel_id: selected_hotel_id} );
 });

@@ -1,0 +1,31 @@
+<h4> Hello, please select city, hotel snf room type</h4>
+
+<select>
+  <%  City.all. each city%>
+  <option value ="<%= city.id %>">
+    <%= city.title %>
+  </option>
+    <% end %>
+  <option value ='Казань'>City1</option>
+</select>
+
+
+
+
+<h1>Welcome</h1>
+<div class='cities'>
+<%=select_tag :city, options_from_collection_for_select(City.all, 'id','title')
+</div>
+<div class = 'hotels'>
+  <%=select_tag
+
+<select>
+  <option value ='Москва'>Hotel1</option>
+  <option value ='Казань'>hotel2</option>
+</select>
+
+
+<select>
+  <option value ='Москва'>City2</option>
+  <option value ='Казань'>City1</option>
+</select>

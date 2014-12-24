@@ -20,7 +20,7 @@ class Admin::CitiesController < ApplicationController
 
     respond_to do |format|
       if @city.save
-        format.html { redirect_to admin_city_path(@city), notice: 'City was successfully created.' }
+        format.html { redirect_to @city, notice: 'City was successfully created.' }
       else
         format.html { render :new }
       end
